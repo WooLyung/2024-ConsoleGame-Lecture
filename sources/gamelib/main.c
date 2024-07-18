@@ -34,7 +34,7 @@ void update(game* game)
 		game->isFinished = true;
 }
 
-void finish(game* game)
+void finish2(game* game)
 {
 	clearConsole();
 	setCursorVisibility(true);
@@ -43,6 +43,6 @@ void finish(game* game)
 
 int main()
 {
-	game* game = newGame(start, finish, update, 60, 10, 30);
+	game* game = newGame(start, finish2, update, 60, 10, 30);
 	launch(game);
 }
